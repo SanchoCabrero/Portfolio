@@ -256,6 +256,9 @@ section.experience{
     font-size: 16px;
     color: #2A7AE4;
 }
+.experiencia__botao--repo:hover{
+    background:  #FFFFFF;
+}
 .experience__botao--demo{
     display: flex;
     flex-direction: row;
@@ -268,19 +271,97 @@ section.experience{
     color: #FFFFFF;
     border: none;
 }
+.experience__botao--demo:hover{
+    background: #093164;
+}
 
 /*Contacto*/
 
 section.formcontato{
-    width: 80%;
-    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #EAF2FD;
+    height: 700px;
 }
+
+.formcontato__contacto{
+    flex-basis: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: auto;
+}
+.formcontato__text{ 
+    height: 100%;
+    flex-basis: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.4rem;
+
+}
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 2.5rem;
+    flex-basis: 90%;
+}
+.formcontato__title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #464646;
+    margin-bottom: 1rem;
+}
+.formcontato__subtext{
+    color: #464646;
+}
+.formcontato__input{
+    height: 3rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #464646;
+    border: none;
+    padding-left: 0.5rem;
+    border-radius: 5px;
+}
+
+.formcontato__textarea{
+    height: 6rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #464646;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    resize: none;
+}
+.formcontato__botao{
+    height: 3rem;
+    width: 10rem;
+    background: #2A7AE4;
+    color: #FFFFFF;
+    border: none;
+}
+.formcontato__botao:hover{
+    background: #093164;
+}
+
 
 /*footeer*/
 
 section.footer{
     width: 80%;
     margin: 2rem auto;
+    text-align: center;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
