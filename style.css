@@ -42,49 +42,245 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
-
+    display: flex;
+    width: 80%;
+    margin: 1rem auto;
+    justify-content: space-between;
+    color: #464646;
+}
+.menu__header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.menu__list{
+    display: flex;
+    gap: 1.5rem;
+}
+.menu__list__item:hover{
+    font-weight: 700;
 }
 
 /*Sección Title*/
 
 section.title{
-
+    width: 80%;
+    margin: 2rem auto;
+    color: #464646;
 }
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.title__profile{
+    flex: 1 1 20%;
+}
+.title__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+.title__bio{
+    font-size: 48px;
+}
+.title__network{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+.title__network__item img{
+    margin-left: 0.5rem;
+}
+.title__network__item:hover{
+    font-weight: 700;
+}
+
 
 /*Sección About*/
 
 section.about{
-
+    width: 80%;
+    margin: 2rem auto;
+}
+.about__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    width: 65%;
+}
+.about__title{
+    font-size: 28px;
+    color: #464646;
+}
+.about__paragraph{
+    color: #464646;
 }
 
-/*Sección Hobbies*/
+/*Sección Skills y Hobbies*/
 
-section.hobbies{
-    
+section.skills, section.hobbies{
+    width: 80%;
+    margin: 4rem auto;
+    text-align: center;
+}
+.skills__title, .hobbies__title, .academic__title, .experience__section__title{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 2rem auto;
+    color: #464646;
+}
+.skills__line, .hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 150px;
+}
+.skills__box, .hobbies__box{
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+    background: #FFFFFF ;
+}
+.skills__name, .hobbies__name{
+    font-size: 12px;
 }
 
 /* Experiencia Académica*/
 
 section.academic{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 3rem auto;
+    text-align: center;
+    height: 500px;
+    background: #EAF2FD;
+}
+.academic__courses{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.academic__courses__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 30%;
+}
+.academic__courses__list{
+    align-self: stretch;
+}
+.academic__courses__item__img{
+    background: #FFFFFF center;
+    background-size: cover;
+    height: 20rem;
+    
+}
+.academic__courses__item__img img{
+    margin-top: 6rem;
+}
+.academic__courses__item__title{
+    text-align: left;
+    color: #464646;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 0.5rem;
+}
+.academic__courses__item__subtitle{
+    text-align: left;
+    color: #464646;
+    padding-top: 0.5rem;
 }
 
 /* experiencia*/
 
 section.experience{
-
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+.experience__box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem;
+}
+.experience__box:nth-child(odd){
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.experience__img{
+    width: 65%;
+}
+.experience__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.experience__title{
+    font-weight: 700;
+    font-size: 22px;
+    color: #464646;
+    margin-bottom: 1rem;
+}
+.experience__text{
+    font-weight: 500;
+    font-size: 16px;
+    color: #464646;
+    margin-bottom: 1rem;
+}
+.experience__description{
+    display: flex;
+    gap: 1rem;
+}
+.experiencia__botao--repo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #2A7AE4;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2A7AE4;
+}
+.experience__botao--demo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: #2A7AE4;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
 }
 
 /*Contacto*/
 
 section.formcontato{
-
+    width: 80%;
+    margin: 2rem auto;
 }
 
 /*footeer*/
 
 section.footer{
-   
+    width: 80%;
+    margin: 2rem auto;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
